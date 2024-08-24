@@ -10,7 +10,7 @@ body{
     padding: 2rem;
 }
 main{
-    
+
     display: grid;
     place-content: center;
 }
@@ -30,4 +30,25 @@ h1{
 
 #box{
     padding: 5rem;
+}
+
+@media (width <= 500px){
+    footer{
+        gap: 1rem;
+        & p{
+            font-size: 0.875rem;
+        }
+    }
+    main{
+        padding: 2rem;
+
+        & #box{
+            font-size: 0.875rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        & input{
+            max-width: 150px;
+        }
+    }
 }
